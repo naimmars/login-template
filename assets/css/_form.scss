@@ -1,0 +1,53 @@
+.form input[type="password"], .form input[type="text"], .form input[type="submit"] {
+    width: 100%;
+   }
+   
+   .form-login {
+
+    label, 
+    input[type="text"], 
+    input[type="password"], 
+    input[type="submit"] {
+    border-radius: 0rem;
+    padding: 1rem;
+    color: #3A3F44;  
+   }
+    label {
+        background-color: #222222;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        margin-bottom: 0;
+       }
+
+       input[type="text"], .form-login input[type="password"] {
+        background-color: #ffffff;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+       }
+
+       input[type="text"]:focus, .form-login input[type="text"]:hover, .form-login input[type="password"]:focus, .form-login input[type="password"]:hover {
+        background-color: #eeeeee;
+       }
+
+       input[type="submit"] {
+        background-color: #00B9BC;
+        color: #eee;
+        font-weight: bold;
+        text-transform: uppercase;
+       }
+
+       input[type="submit"]:focus, .form-login input[type="submit"]:hover {
+        background-color: #197071;
+       }
+
+   } 
+
+   .form-field {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1rem;
+   }
