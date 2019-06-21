@@ -1,7 +1,7 @@
 .container {
     background:rgba(255,255,255,1);
     border-radius: 0rem;
-    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, .4);
     width:20rem;
     display: flex;  
     flex-direction: column;
@@ -42,13 +42,13 @@
     .user:before {
      content: '\f007';
      font: 20px fontawesome;
-     color: #ed127e;
+     color: var(--bg-color-pink);
     }
     
     .lock:before {
      content: '\f023';
      font: 20px fontawesome;
-     color: #ed127e;
+     color: var(--bg-color-pink);
     }
 
 .form input[type="password"], .form input[type="text"], .form input[type="submit"] {
@@ -89,7 +89,7 @@
        }
 
        input[type="submit"] {
-        background-color: #ed127e;
+        background-color: var(--bg-color-pink,#ed127e);
         color: #eee;
         font-weight: bold;
         text-transform: uppercase;
@@ -97,7 +97,7 @@
 
        input[type="submit"]:focus, 
        input[type="submit"]:hover {
-        background-color: #cc0a69;
+        background: var(--bg-color-pink-hover, #cc0a69);
        }
 
    } 

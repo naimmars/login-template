@@ -10,8 +10,8 @@ html {
   min-height: 100%;
   font-family: 'lato', sans-serif;
   color: #fff;
-  background: #8d4cb5;
-  background: #8d4cb5; /* fallback for old browsers */
+  background: #d4c7db;
+  background: var(--bg-color-purple, #8d4cb5); /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #8d4cb5 , #ff00b1); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #8d4cb5, #ff00b1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }

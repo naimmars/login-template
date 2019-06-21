@@ -16,8 +16,8 @@ body {
   min-height: 100%;
   font-family: 'lato', sans-serif;
   color: #fff;
-  background: #8d4cb5;
-  background: #8d4cb5;
+  background: #d4c7db;
+  background: var(--bg-color-purple, #8d4cb5);
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left bottom, left top, from(#8d4cb5), to(#ff00b1));
@@ -43,8 +43,8 @@ body {
 .container {
   background: white;
   border-radius: 0rem;
-  -webkit-box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.4);
   width: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,13 +92,13 @@ input {
 .user:before {
   content: '\f007';
   font: 20px fontawesome;
-  color: #ed127e;
+  color: var(--bg-color-pink);
 }
 
 .lock:before {
   content: '\f023';
   font: 20px fontawesome;
-  color: #ed127e;
+  color: var(--bg-color-pink);
 }
 
 .form input[type="password"], .form input[type="text"], .form input[type="submit"] {
@@ -138,7 +138,7 @@ input {
 }
 
 .form-login input[type="submit"] {
-  background-color: #ed127e;
+  background-color: var(--bg-color-pink, #ed127e);
   color: #eee;
   font-weight: bold;
   text-transform: uppercase;
@@ -146,7 +146,7 @@ input {
 
 .form-login input[type="submit"]:focus,
 .form-login input[type="submit"]:hover {
-  background-color: #cc0a69;
+  background: var(--bg-color-pink-hover, #cc0a69);
 }
 
 .form-field {
